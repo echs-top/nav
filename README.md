@@ -7,6 +7,8 @@
 
 预览：[https://echsfxy.vercel.app](https://echsfxy.vercel.app)
 
+只试了火狐和chrome系，其他浏览器自求多福，gemini不一定修的了
+
 ## nav.js
 
 ```js
