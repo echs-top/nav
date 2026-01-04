@@ -1,7 +1,7 @@
 
 ## 项目
 
-最初修改自[5iux](https://github.com/5iux/sou)，精简、简单化处理
+最初修改自[5iux](https://github.com/5iux/sou)，现已改的面目全非
 
 运行要求：html、js、css
 
