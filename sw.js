@@ -1,0 +1,6 @@
+const CACHE_NAME = 'v1.2.5';
+// 长期资源
+const STATIC_ASSETS = ['/','index.html','style.css','man.js','https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/3.7.1/jquery.slim.min.js','https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/quicklink/3.0.1/quicklink.js'];
+// 即时更新
+const DYNAMIC_ASSETS = ['nav.js','https://api.echs.top/classic','https://api.echs.top/slim'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(STATIC_ASSETS)));self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.map(k=>k!==CACHE_NAME&&caches.delete(k)))));});self.addEventListener('fetch',e=>{const url=new URL(e.request.url);const isDynamic=DYNAMIC_ASSETS.some(path=>url.pathname.includes(path));if(isDynamic){e.respondWith(caches.open(CACHE_NAME).then(async cache=>{const cached=await cache.match(e.request);const fetched=fetch(e.request).then(res=>{cache.put(e.request,res.clone());return res;});return cached||fetched;}));}else{e.respondWith(caches.match(e.request).then(res=>res||fetch(e.request)));}});
