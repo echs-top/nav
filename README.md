@@ -5,7 +5,7 @@
 
 运行要求：html、js、css
 
-预览：[https://dh.echs.top](https://dh.echs.top)
+预览：[https://echsfxy.vercel.app](https://echsfxy.vercel.app)
 
 ## nav.js
 
