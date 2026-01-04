@@ -52,31 +52,3 @@ https://b23.tv/PnGt5C0 | 植物娘大战僵尸
 ├──  CDN: quicklink-*.js
 ```
 
-## 更新
-
-```
-//6.1 2026.01.03
-更新man.js、优化css(相对很完美了)、加入serviceWorker
-ps：不到20kb的js，虽然没多余功能，但总比加载SkinView3D库和Three.js好，它俩加起来快2MB了。
-// 6.0 2026.01.03
-本次更新大部分内容由gemini ai完成
-内容重写；加入minecraft skin css样式；精简文件；
-5.1：更换cdn链接
-
-// 5.0 2025.11.02
-精简html标签；去除css、js文件无意义内容；使用nav.js写入config及书签，去除PHP环境依赖，回归纯html
-
-// 4.0 2025.10.27
-精简html内容；常用自定义放置php顶部；精简优化css和js文件；更新quicklink-3.0.1.js和jquery.slim.min-4.0.0-rc.1.js
-# 更新全靠AI修……
-
-// 3.0 2025.02.21
-新增nav.txt并通过php转化输出；html代码精简文本优化；尝试修正搜索按钮位置
-
-// 2.0 2024.06.22
-更换webp网站图标；替换jquery.slim.min.4.0.0.js；精简html js css；引入Quicklinkjs网页预加载；发现staticfile bootcdn等公共cdn被投毒 替换自用cdn加速
-!!! 三方CDN被投毒 https://github.com/Tencent/vConsole/issues/683
-
-// 1.0 2024.06.15
-删除无意义内容 链接图标；优化搜索图标点击；a标签新标签页打开；更换静态资源链接；精简html；缩短主编辑区；引用jquery.slim.min.js
-```
